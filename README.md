@@ -164,21 +164,6 @@ public:
 - public 상속으로 모든 stack 기능 유지
 - 타입 별칭으로 복잡한 타입명 단순화
 
-### 3. **반복자 인터페이스 추가**
-
-```cpp
-
-cpp
-iterator begin() { return this->c.begin(); }
-iterator end() { return this->c.end(); }
-const_iterator begin() const { return this->c.begin(); }
-const_iterator end() const { return this->c.end(); }
-
-```
-
-- 내부 컨테이너의 반복자 직접 노출
-- const 정확성 보장
-
 ### 🔍 핵심 개념
 
 - **어댑터 패턴**: 기존 인터페이스를 새로운 인터페이스로 변환
