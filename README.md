@@ -106,23 +106,6 @@ int shortestSpan() {
     return minSpan;
 }
 
-```
-
-- **정렬 후 인접 요소 비교**: O(n log n) 시간 복잡도
-- 정렬을 통해 최소 거리 탐색 최적화
-
-### 3. **반복자 범위 추가**
-
-```cpp
-
-cpp
-template <typename Iterator>
-void addRange(Iterator begin, Iterator end) {
-    while (begin != end) {
-        addNumber(*begin);
-        ++begin;
-    }
-}
 
 ```
 
